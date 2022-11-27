@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Doumentation</title>
+    <link rel="stylesheet" href="./technical.css">
+</head>
+
+
+<body>
+
+    <nav>
+        <header>Contents</header>
+        <h3><a href="../index.html" class="nav-link">Main</a></h3>
+        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+        <li><a href="#Creating_an_HTML_File" class="nav-link">Creating an HTML File</a></li>
+        <li><a href="#The_DOCTYPE" class="nav-link">The DOCTYPE</a></li>
+        <li><a href="#HTML_Element" class="nav-link">HTML Element</a></li>
+        <li><a href="#Head_Element" class="nav-link">Head Element</a></li>
+        <li><a href="#Body_Element" class="nav-link">Body Element</a></li>
+        <li><a href="#Viewing_HTML_Files_in_the_Browser" class="nav-link">Viewing HTML Files in the Browser</a></li>
+
+    </nav>
+    <main id="main-doc">
+        <h1>HTML Boilerplate</h1>
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>All HTML documents have the same basic structure or boilerplate that needs to be in place
+                before anything
+                useful can be done.</p>
+        </section>
+        <section class="main-section" id="Creating_an_HTML_File">
+            <header>Creating an HTML File</header>
+
+            <p> We should always name the HTML file that will contain the homepage of our
+                websites index.html. This is
+                because web servers will by default look for an <code>index.html</code> page when users land on our
+                websites
+                - and not
+                having one will cause big problems.</p>
+        </section>
+        <section class="main-section" id="The_DOCTYPE">
+            <header>The DOCTYPE</header>
+            <p>Every HTML page starts with a doctype declaration. The doctype’s purpose is to tell the
+                browser what version of HTML it should use to render the document. The latest version of HTML is HTML5,
+                and
+                the doctype for that version is simply <code>!DOCTYPE html</code>.
+            </p>
+        </section>
+        <section class="main-section" id="HTML_Element">
+            <header>HTML Element</header>
+            <p>After we declare the doctype, we need to provide an <code>html</code> element. This is what’s known as
+                the
+                root element of the document, meaning that every other element in the document will be a descendant of
+                it.
+            </p>
+        </section>
+        <section class="main-section" id="Head Element">
+            <header>Head Element</header>
+            <p>The <code>head</code> element is where we put important meta-information about our webpages, and stuff
+                required for our webpages to render correctly in the browser. Inside the <code>head</code>, we should
+                not
+                use any element that displays content on the webpage.</p>
+            <dl>
+                <dt>The Charset Meta Element</dt>
+                <dl>
+                    We should always have the meta tag for the charset encoding of the webpage in the head element:
+                    <code>meta charset="utf-8"</code>.
+                </dl>
+                <dt>Title Element</dt>
+                <dl>
+                    The title element is used to give webpages a human-readable title which is displayed in our
+                    webpage’s
+                    browser tab.
+                </dl>
+            </dl>
+        </section>
+        <section class="main-section" id="Body_Element">
+            <header>Body Element</header>
+            <p>
+                The final element needed to complete the HTML boilerplate is the <code>body</code> element. This is
+                where all the content that will be displayed to users will go - the text, images, lists, links, and so
+                on.
+            </p>
+            <p>To complete the boilerplate, add a body element to the <coe>index.html</coe> file. The body element also
+                goes within the HTML element and is always below the head element.</p>
+        </section>
+        <section class="main-section" id="Viewing_HTML_Files_in_the_Browser">
+            <header>Viewing HTML Files in the Browser</header>
+            <p>
+                The HTML boilerplate in the <code>index.html</code> file is complete at this point, but how do you view
+                it in the browser? There are a couple of different options:
+            </p>
+            <ol>
+                <li>
+                    You can drag and drop an HTML file from your text editor into the address bar of your browser.
+                </li>
+                <li>
+                    You can find the HTML file in your file system and then double click it. This will open up the file
+                    in the default browser your system uses.
+                </li>
+                <li>
+                    You can use the terminal to open the file in your browser.
+                    <ol>
+                        <li>
+                            <span>Ubuntu </span>- Navigate to the directory containing the file and type <code>  google-chrome
+                                index.html</code>
+                        </li>
+                        <li>
+                            <span>macOS </span>- Navigate to the directory containing the file and type
+                            <code>open ./index.html</code>
+
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+            <p>Using one of the methods above, open up the index.html file we have been working on. You’ll notice the
+                screen is blank. This is because we don’t have anything in our body to display.</p>
+            <p>
+                Back in the <code>index.html</code> file, let’s add a heading to the body, and save the file.
+            </p>
+            <p>Now, if you refresh the page in the browser, you should see the changes take effect.</p>
+        </section>
+    </main>
+
+</body>
+
+</html>
