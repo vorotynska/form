@@ -11,16 +11,43 @@ html {
 
   nav {
     width: 20%;
-    border: 2px solid gray;
+    border-right: 4px solid gray;
     padding: 50px 15px;
+  }
+
+  nav li {
+    color: black;
+  margin: 0.2rem 0.25rem;
+  padding: 0.2rem;
+  display: block;
+  border-bottom: 1px solid slategray;
+  }
+
+  li > a {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 0.15px;
+  }
+
+  header {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
   }
 
   #main-doc {
     width: 70%;
-    border: 3px slategrey solid;
     padding: 50px 20px;
- 
-  }
+ }
+
+   h1 {
+    letter-spacing: 0.6px;
+    font-size: 2rem;
+   }
+
+   p,dl,dt {
+    letter-spacing: 0.15px;
+   }
 
   @media (min-width: 480px) and (max-width: 768px) {
     body {
